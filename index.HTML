@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LO MEJOR DE LOS 90'S</title>
+  <style>
+    /* El asterisco es necesario para el selector universal */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background-image: url("disco.jpeg"); 
+      background-size: cover; 
+      background-position: center;   
+      color: white; 
+      text-align: center;
+      padding: 120px 120px; 
+    }
+
+    /* ===== MENÚ ===== */
+    nav {
+      background-color: black;
+      text-align: left;
+    }
+
+    /* Para que el submenú funcione, necesitamos envolver los grupos en un div .dropdown */
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    nav a {
+      color: pink;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+    }
+
+    nav a:hover, .dropdown:hover > a {
+      background-color: gold;
+      color: red;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: gray;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      display: block;
+      color: white;
+      padding: 12px 16px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .contenedor {
+      display: flex;
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    main {
+      width: 70%;
+      padding-right: 20px;
+    }
+
+.musica {
+      background-color: lightblue;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .musica button {
+      background-color:red;
+      border: none;
+      padding: 12px 24px;
+      color: white;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .musica button:hover {
+      background-color: green;
+    }
+
+
+    aside {
+      width: 30%;
+      text-align: center;
+      border-left: 1px solid #ddd;
+    }
+
+    aside img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 50px auto;
+      object-fit: cover; /* Evita que la imagen se deforme */
+      border: 3px solid black;
+    }
+
+    footer {
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+    <h1>⚡ LO MEJOR DE LOS 90'S ⚡</h1>
+    <h3>"No puedes comenzar un fuego sin una chispa" - Bruce Springsteen</h3>
+</header>
+
+<nav>
+    <div class="dropdown">
+        <a href="#">BANDAS</a>
+        <div class="dropdown-content">
+            <a href="Banda%201.html"  TARGET="_BLANK">Queen</a>
+            <a href="Banda%202.html" TARGET="_BLANK">Pink Floyd</a>
+            <a href="Banda%203.html" TARGET="_BLANK">Led Zeppelin</a>
+            <a href="Banda%204.html"  TARGET="_BLANK">The Rolling Stones</a>
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#">CANTANTES</a>
+        <div class="dropdown-content">
+            <a href="Kurt.html" TARGET="_BLANK" >Kurt Cobain</a>
+            <a href="FREDDIE.HTML" TARGET="_BLANK">Freddie Mercury</a>
+            <a href="MACCARTNEY.HTML" TARGET="_BLANK" >Paul McCartney</a>
+            <a href="DAVID.HTML" TARGET="_BLANK" >David Bowie</a>
+            <a href="lennon.HTML">John Lennon </a>
+            <a href="AXL%20ROSE.HTML">Axl Rose</a>
+            <a href="Scott.html">Bon Scott</a>
+            <a href="Stanley.html">Paul Stanley </a>
+
+        </div>
+    </div>
+    <a href="GALERIA.HTML">GALERÍA</a>
+    <a href="Formulario.html">FORMULARIO</a>
+    <a href="VIDE.HTML">VIDEOS</a>
+    <a href="REDES.HTML">REDES SOCIALES</a>
+</nav>
+
+<div class="contenedor">
+    <main>
+<br><br>
+        <h1>BIENVENIDO NUEVO ROCKERO</h1>
+<br><br>
+<br><br>
+        <p>EL ROCK ES UN GENERO DE MUSICA POPULAR SURGIDO EN EE.UU. EN LA DECADA DE 1950. DERIVADO DEL ROCK AND ROLL Y LA FUSION DE RHYTHM AND BLUES Y COUNTRE.</p>
+<br><br>
+<br><br>
+        <p>EVOLUCIONO HACIA DIVERSOS ESTILOS, INCLUYENDO ROCK CLASICO, HARD ROCK, PUNK Y ALTERNATIV, CON ICONOS COMO QUEEN Y NIRVANA.</p>
+<br><br>
+        <br><hr><br>
+        
+<br><br>
+        <div class="musica">
+          <p>ESCUCHA NUESTRA MUSICA MIENTRAS NAVEGAS POR NUESTRO SITIO💓 :</p>
+<br><br>
+          <button id="playBtn">▶ Reproducir música</button>
+          <audio id="audio" src="Red Hot Chili Peppers - Californication (Official Music Video) [HD UPGRADE].mp3"></audio>
+        </div>
+    </main>
+
+    <aside>
+        <img src="concierto.jpeg" alt="Rock 1">
+        <img src="metal.jpeg" alt="Rock 2">
+        <img src="todo.jpeg" alt="Rock 3">
+    </aside>
+</div>
+
+<footer>
+    <p>&copy; 2026 - Tamara Hernandez</p>
+</footer>
+
+<script>
+  // Script para que el botón de música funcione
+  const playBtn = document.getElementById('playBtn');
+  const audio = document.getElementById('audio');
+
+  playBtn.addEventListener('click', () => {
+    if (audio.paused) {
+      audio.play();
+      playBtn.textContent = "⏸️ Pausar música";
+    } else {
+      audio.pause();
+      playBtn.textContent = "▶️ Reproducir música";
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALERIA ROCKERA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: arial, verdana;
+             background: linear-gradient(to right,#eded5a, #ed845a );
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+        }
+
+        /* Botón volver mejorado */
+        .volver {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            text-decoration: none;
+            color: white;
+            background: #ff334e;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            z-index: 1000;
+            transition: 0.3s;
+        }
+
+        .volver:hover {
+            background: #cc001b;
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #ff334e;
+            margin-top: 60px;
+            text-shadow: 2px 2px #000;
+            font-size: 3rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .item {
+            background: #2a2a2a;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+            border: 2px solid #ff334e;
+        }
+
+
+        .item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            filter: grayscale(30%);
+        }
+
+
+        .info {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            background: #ff334e;
+        }
+
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.HTML" class="volver">VOLVER</a>
+
+    <h1>GALERIA ROCKERA</h1>
+
+    <div class="gallery">
+        <div class="item">
+            <img src="galeria 1.jpeg" alt="Metallica">
+            <div class="info">METALLICA</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 2.jpeg" alt="Nirvana">
+            <div class="info">NIRVANA</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 3.jpeg" alt="Soda Stereo">
+            <div class="info">SODA ESTEREO</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 4.jpeg" alt="The Beatles">
+            <div class="info">THE BEATLES</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 5.jpeg" alt="The Police">
+            <div class="info">THE POLICE</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 6.jpeg" alt="Enanitos Verdes">
+            <div class="info">ENANITOS VERDES</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 7.jpeg" alt="AC/DC">
+            <div class="info">AC DC</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 8.jpeg" alt="Guns N´ Roses">
+            <div class="info">GUNS N´ROSES</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 9.jpeg" alt="Iron Maiden">
+            <div class="info">IRON MAIDEN</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 10.jpeg" alt="Queen">
+            <div class="info">QUEEN</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 11.jpeg" alt="KISS">
+            <div class="info">KISS</div>
+        </div>
+
+        <div class="item">
+            <img src="galeria 12.jpeg" alt="ABBA">
+            <div class="info">ABBA</div>
+        </div>
+    </div>
+
+</body>
+</html>
